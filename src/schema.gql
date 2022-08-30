@@ -1,0 +1,14 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type BookSchema {
+  ID: Int!
+  author: String
+  name: String!
+  price: Int!
+}
+
+type Query {
+  addBook: BookSchema!
+}

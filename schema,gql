@@ -1,0 +1,43 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type BookEntity {
+  """Author Field"""
+  author: String!
+
+  """Book Id Field"""
+  id: Int!
+
+  """Book Name Field"""
+  name: String!
+
+  """Price Field"""
+  price: Int!
+}
+
+input CreateBookInput {
+  author: String!
+  id: Int!
+
+  """Example field (placeholder)"""
+  name: String!
+  price: Int!
+}
+
+type Mutation {
+  createBook(createBookInput: CreateBookInput!): BookEntity!
+  removeBook(id: Int!): BookEntity!
+  updateBook(updateBookInput: UpdateBookInput!): BookEntity!
+}
+
+type Query {
+  book(id: Int!): BookEntity!
+}
+
+input UpdateBookInput {
+  author: String!
+  id: Int!
+  name: String!
+  price: Int!
+}
