@@ -2,6 +2,12 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+input AddArgs {
+  author: String!
+  name: String!
+  price: Int!
+}
+
 type BookSchema {
   ID: Int!
   author: String
@@ -9,6 +15,20 @@ type BookSchema {
   price: Int!
 }
 
+type Mutation {
+  addBook(addArgs: AddArgs!): BookSchema!
+  deleteBook(bookid: Int!): String!
+  updateBook(updateArgs: UpdateArgs!): BookSchema!
+}
+
 type Query {
-  addBook: BookSchema!
+  findAllBook: [BookSchema!]!
+  findBookById(bookid: Int!): BookSchema!
+}
+
+input UpdateArgs {
+  ID: Int!
+  author: String!
+  name: String!
+  price: Int!
 }

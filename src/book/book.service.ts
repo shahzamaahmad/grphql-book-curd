@@ -60,7 +60,7 @@ export class BookService {
     book.name = addArgs.name
     book.author = addArgs.author
     book.price = addArgs.price
-    let result = await this.bookRepo.save(addArgs)
+    let result = await this.bookRepo.save(book)
     return result;
   }
   async updateBook(updateArgs: UpdateArgs): Promise<any> {
