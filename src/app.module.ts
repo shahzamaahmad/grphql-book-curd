@@ -1,6 +1,3 @@
-// /* eslint-disable @typescript-eslint/no-unused-vars */
-// import { BookService } from './book/book.service';
-// import { BookResolver } from './book/book.resolver';
 import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { BookModule } from './book/book.module';

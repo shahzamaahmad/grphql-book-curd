@@ -1,37 +1,3 @@
-// import { Injectable } from '@nestjs/common';
-// import { BookEntity } from './entities/book.entity';
-
-// @Injectable()
-// export class BookService {
-//   public data: BookEntity[] = [];
-
-//   addBook(book: BookEntity): any {
-//     return this.data.push(book);
-//   }
-//   updateBook(id: number, book: BookEntity) {
-//     for (let x = 0; x < this.data.length; x++) {
-//       if (this.data[x].id === id) {
-//         return (this.data[x] = book);
-//       }
-//     }
-//   }
-
-//   getAllBook() {
-//     return this.data;
-//   }
-
-//   getBook(id: number) {
-//     for (let x = 0; x < this.data.length; x++) {
-//       if (this.data[x].id === id) {
-//         return this.data[x];
-//       }
-//     }
-//   }
-
-//   removeBook(id: number) {
-//     return (this.data = this.data.filter((book) => book.id != id));
-//   }
-// }
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
