@@ -10,5 +10,4 @@ export class BookSchema {
   name: string;
   @Field({ nullable: true })
   author: string;
-
 }

@@ -5,7 +5,6 @@ import { ApolloDriver } from '@nestjs/apollo';
 import { join } from 'path';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config/dist';
-
 @Module({
   imports: [
     GraphQLModule.forRoot({
